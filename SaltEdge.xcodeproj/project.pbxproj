@@ -24,7 +24,9 @@
 		7BD43E141E5385C900210F7F /* LoginListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */; };
 		7BD43E161E53904300210F7F /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E151E53904300210F7F /* LoginTableViewCell.swift */; };
 		7BD43E1A1E53FBBF00210F7F /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */; };
-		7BD43E1C1E53FD7F00210F7F /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E1B1E53FD7F00210F7F /* Accounts.swift */; };
+		7BD43E1C1E53FD7F00210F7F /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E1B1E53FD7F00210F7F /* Transaction.swift */; };
+		7BD43E1E1E54939500210F7F /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E1D1E54939500210F7F /* CategoryTableViewController.swift */; };
+		7BD43E201E5493BF00210F7F /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E1F1E5493BF00210F7F /* CategoryTableViewCell.swift */; };
 		ADFC7504A62AAE82B7E83A53 /* Pods_SaltEdge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDD980655D20B53793AD4CA /* Pods_SaltEdge.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +73,9 @@
 		7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginListTableViewController.swift; sourceTree = "<group>"; };
 		7BD43E151E53904300210F7F /* LoginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		7BD43E1B1E53FD7F00210F7F /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		7BD43E1B1E53FD7F00210F7F /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		7BD43E1D1E54939500210F7F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		7BD43E1F1E5493BF00210F7F /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		943B2455020925BDD3B1981E /* Pods-SaltEdgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdgeUITests/Pods-SaltEdgeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9BDD980655D20B53793AD4CA /* Pods_SaltEdge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltEdge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8398576B3368607DF1D0432 /* Pods_SaltEdgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltEdgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,7 @@
 				7B4F772C1E4D0E7C0019E90D /* LoginViewController.swift */,
 				7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */,
 				7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */,
+				7BD43E1D1E54939500210F7F /* CategoryTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -136,7 +141,7 @@
 			children = (
 				7B224D861E52D799001FA5EE /* Provider.swift */,
 				7BD43E111E5383B600210F7F /* Login.swift */,
-				7BD43E1B1E53FD7F00210F7F /* Accounts.swift */,
+				7BD43E1B1E53FD7F00210F7F /* Transaction.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				7B4F77061E4CE9F60019E90D /* Info.plist */,
 				7B4F77281E4CEAB00019E90D /* APIManager.swift */,
 				7BD43E151E53904300210F7F /* LoginTableViewCell.swift */,
+				7BD43E1F1E5493BF00210F7F /* CategoryTableViewCell.swift */,
 			);
 			path = SaltEdge;
 			sourceTree = "<group>";
@@ -516,7 +522,7 @@
 			files = (
 				7BD43E121E5383B600210F7F /* Login.swift in Sources */,
 				7B224D871E52D799001FA5EE /* Provider.swift in Sources */,
-				7BD43E1C1E53FD7F00210F7F /* Accounts.swift in Sources */,
+				7BD43E1C1E53FD7F00210F7F /* Transaction.swift in Sources */,
 				7B4F77291E4CEAB00019E90D /* APIManager.swift in Sources */,
 				7B4F76FD1E4CE9F60019E90D /* ViewController.swift in Sources */,
 				7BD43E0B1E5341B000210F7F /* AutoCompleteTextField.swift in Sources */,
@@ -525,6 +531,8 @@
 				7BD43E141E5385C900210F7F /* LoginListTableViewController.swift in Sources */,
 				7B4F772D1E4D0E7C0019E90D /* LoginViewController.swift in Sources */,
 				7B4F76FB1E4CE9F60019E90D /* AppDelegate.swift in Sources */,
+				7BD43E201E5493BF00210F7F /* CategoryTableViewCell.swift in Sources */,
+				7BD43E1E1E54939500210F7F /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

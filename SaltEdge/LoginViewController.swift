@@ -82,6 +82,7 @@ class LoginViewController: UIViewController, SELoginFetchingDelegate {
         SVProgressHUD.show()
         APIManager.instance.fetchFullProvidersList(success: { (SEProviders : Set<AnyHashable>?) in
             DispatchQueue.main.async {
+
                 for SEProvider in SEProviders!{
                     if let provider = SEProvider.base as? SEProvider{
                         let provider = Provider(value: ["name": provider.name!,

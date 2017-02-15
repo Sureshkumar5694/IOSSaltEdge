@@ -265,6 +265,9 @@
                                 <state key="normal" title="View Transaction">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewTransaction:" destination="89v-z8-YOW" eventType="touchUpInside" id="lnl-9f-eFh"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PR4-fS-GUu">
                                 <rect key="frame" x="71" y="91" width="221" height="30"/>
@@ -290,11 +293,60 @@
                         <outlet property="accountsListTableView" destination="1KK-fv-LbU" id="P5Z-4D-W34"/>
                         <outlet property="fromDate" destination="y8D-bb-E2P" id="7r9-S5-lb2"/>
                         <outlet property="toDate" destination="GuX-Vq-oHR" id="90P-BI-Gmg"/>
+                        <segue destination="1WG-iZ-RvD" kind="show" identifier="category" id="wdd-U7-fPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAa-6B-quZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3816.8000000000002" y="489.80509745127438"/>
+        </scene>
+        <!--Category Table View Controller-->
+        <scene sceneID="30d-6Z-M73">
+            <objects>
+                <tableViewController id="1WG-iZ-RvD" customClass="CategoryTableViewController" customModule="SaltEdge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="CCI-7N-6sm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="category cell" rowHeight="50" id="fVU-zH-oa0" customClass="CategoryTableViewCell" customModule="SaltEdge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fVU-zH-oa0" id="8y0-KP-G7A">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORk-9W-HPS">
+                                            <rect key="frame" x="8" y="14" width="267" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-qU-CqE">
+                                            <rect key="frame" x="298" y="14" width="69" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amount" destination="MPW-qU-CqE" id="fqe-Ix-MHO"/>
+                                    <outlet property="transactionDescription" destination="ORk-9W-HPS" id="IOE-fh-S81"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1WG-iZ-RvD" id="Wpw-Yv-yja"/>
+                            <outlet property="delegate" destination="1WG-iZ-RvD" id="dva-1l-Fme"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwM-w5-9OQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4640.8000000000002" y="489.80509745127438"/>
         </scene>
         <!--Item-->
         <scene sceneID="Eof-og-FYW">
