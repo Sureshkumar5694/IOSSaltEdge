@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1249E93DDCF9E64AA428BD59 /* Pods_SaltEdgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8398576B3368607DF1D0432 /* Pods_SaltEdgeUITests.framework */; };
+		2ACED72296B1E3EF20EF8F64 /* Pods_SaltEdgeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1595C84844E1DA5ED810BC5B /* Pods_SaltEdgeTests.framework */; };
+		7B224D871E52D799001FA5EE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B224D861E52D799001FA5EE /* Provider.swift */; };
+		7B4F76FB1E4CE9F60019E90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F76FA1E4CE9F60019E90D /* AppDelegate.swift */; };
+		7B4F76FD1E4CE9F60019E90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F76FC1E4CE9F60019E90D /* ViewController.swift */; };
+		7B4F77001E4CE9F60019E90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4F76FE1E4CE9F60019E90D /* Main.storyboard */; };
+		7B4F77021E4CE9F60019E90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4F77011E4CE9F60019E90D /* Assets.xcassets */; };
+		7B4F77051E4CE9F60019E90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4F77031E4CE9F60019E90D /* LaunchScreen.storyboard */; };
+		7B4F77101E4CE9F60019E90D /* SaltEdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F770F1E4CE9F60019E90D /* SaltEdgeTests.swift */; };
+		7B4F771B1E4CE9F60019E90D /* SaltEdgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F771A1E4CE9F60019E90D /* SaltEdgeUITests.swift */; };
+		7B4F77291E4CEAB00019E90D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F77281E4CEAB00019E90D /* APIManager.swift */; };
+		7B4F772D1E4D0E7C0019E90D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F772C1E4D0E7C0019E90D /* LoginViewController.swift */; };
+		7BD43E0B1E5341B000210F7F /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E0A1E5341B000210F7F /* AutoCompleteTextField.swift */; };
+		7BD43E121E5383B600210F7F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E111E5383B600210F7F /* Login.swift */; };
+		7BD43E141E5385C900210F7F /* LoginListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */; };
+		7BD43E161E53904300210F7F /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E151E53904300210F7F /* LoginTableViewCell.swift */; };
+		7BD43E1A1E53FBBF00210F7F /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */; };
+		7BD43E1C1E53FD7F00210F7F /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43E1B1E53FD7F00210F7F /* Accounts.swift */; };
+		ADFC7504A62AAE82B7E83A53 /* Pods_SaltEdge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDD980655D20B53793AD4CA /* Pods_SaltEdge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B4F770C1E4CE9F60019E90D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B4F76EF1E4CE9F60019E90D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4F76F61E4CE9F60019E90D;
+			remoteInfo = SaltEdge;
+		};
+		7B4F77171E4CE9F60019E90D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B4F76EF1E4CE9F60019E90D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4F76F61E4CE9F60019E90D;
+			remoteInfo = SaltEdge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1595C84844E1DA5ED810BC5B /* Pods_SaltEdgeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltEdgeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ACD5527BF45A3F78A8BF61 /* Pods-SaltEdge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdge/Pods-SaltEdge.debug.xcconfig"; sourceTree = "<group>"; };
+		74110624F85B0A7D939945D3 /* Pods-SaltEdgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdgeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdgeTests/Pods-SaltEdgeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A531D140D0A99340BFC649C /* Pods-SaltEdgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdgeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdgeTests/Pods-SaltEdgeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B224D861E52D799001FA5EE /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		7B4F76F71E4CE9F60019E90D /* SaltEdge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltEdge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4F76FA1E4CE9F60019E90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B4F76FC1E4CE9F60019E90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B4F76FF1E4CE9F60019E90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B4F77011E4CE9F60019E90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B4F77041E4CE9F60019E90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B4F77061E4CE9F60019E90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4F770B1E4CE9F60019E90D /* SaltEdgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltEdgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4F770F1E4CE9F60019E90D /* SaltEdgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltEdgeTests.swift; sourceTree = "<group>"; };
+		7B4F77111E4CE9F60019E90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4F77161E4CE9F60019E90D /* SaltEdgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltEdgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4F771A1E4CE9F60019E90D /* SaltEdgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltEdgeUITests.swift; sourceTree = "<group>"; };
+		7B4F771C1E4CE9F60019E90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4F77281E4CEAB00019E90D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7B4F772C1E4D0E7C0019E90D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BD43E0A1E5341B000210F7F /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		7BD43E111E5383B600210F7F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginListTableViewController.swift; sourceTree = "<group>"; };
+		7BD43E151E53904300210F7F /* LoginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		7BD43E1B1E53FD7F00210F7F /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		943B2455020925BDD3B1981E /* Pods-SaltEdgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdgeUITests/Pods-SaltEdgeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9BDD980655D20B53793AD4CA /* Pods_SaltEdge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltEdge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8398576B3368607DF1D0432 /* Pods_SaltEdgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltEdgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E1A5972B5474BE0AD77737 /* Pods-SaltEdge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdge/Pods-SaltEdge.release.xcconfig"; sourceTree = "<group>"; };
+		F22730277CB67632C0A245A2 /* Pods-SaltEdgeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltEdgeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaltEdgeUITests/Pods-SaltEdgeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B4F76F41E4CE9F60019E90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFC7504A62AAE82B7E83A53 /* Pods_SaltEdge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77081E4CE9F60019E90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACED72296B1E3EF20EF8F64 /* Pods_SaltEdgeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77131E4CE9F60019E90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1249E93DDCF9E64AA428BD59 /* Pods_SaltEdgeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5507EE52CFE007008A2D0DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61ACD5527BF45A3F78A8BF61 /* Pods-SaltEdge.debug.xcconfig */,
+				B8E1A5972B5474BE0AD77737 /* Pods-SaltEdge.release.xcconfig */,
+				7A531D140D0A99340BFC649C /* Pods-SaltEdgeTests.debug.xcconfig */,
+				74110624F85B0A7D939945D3 /* Pods-SaltEdgeTests.release.xcconfig */,
+				F22730277CB67632C0A245A2 /* Pods-SaltEdgeUITests.debug.xcconfig */,
+				943B2455020925BDD3B1981E /* Pods-SaltEdgeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B224D821E52D640001FA5EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B4F76FC1E4CE9F60019E90D /* ViewController.swift */,
+				7B4F772C1E4D0E7C0019E90D /* LoginViewController.swift */,
+				7BD43E131E5385C900210F7F /* LoginListTableViewController.swift */,
+				7BD43E191E53FBBF00210F7F /* TransactionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B224D831E52D66B001FA5EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B224D861E52D799001FA5EE /* Provider.swift */,
+				7BD43E111E5383B600210F7F /* Login.swift */,
+				7BD43E1B1E53FD7F00210F7F /* Accounts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B224D841E52D672001FA5EE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		7B224D851E52D679001FA5EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		7B4F76EE1E4CE9F60019E90D = {
+			isa = PBXGroup;
+			children = (
+				7B4F76F91E4CE9F60019E90D /* SaltEdge */,
+				7B4F770E1E4CE9F60019E90D /* SaltEdgeTests */,
+				7B4F77191E4CE9F60019E90D /* SaltEdgeUITests */,
+				7B4F76F81E4CE9F60019E90D /* Products */,
+				5507EE52CFE007008A2D0DB1 /* Pods */,
+				7CA79FE34DA8B85689FBFEEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B4F76F81E4CE9F60019E90D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B4F76F71E4CE9F60019E90D /* SaltEdge.app */,
+				7B4F770B1E4CE9F60019E90D /* SaltEdgeTests.xctest */,
+				7B4F77161E4CE9F60019E90D /* SaltEdgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B4F76F91E4CE9F60019E90D /* SaltEdge */ = {
+			isa = PBXGroup;
+			children = (
+				7BD43E091E53419900210F7F /* AutoCompleteTextFiled */,
+				7B224D851E52D679001FA5EE /* Service */,
+				7B224D841E52D672001FA5EE /* Repository */,
+				7B224D831E52D66B001FA5EE /* Model */,
+				7B224D821E52D640001FA5EE /* Controller */,
+				7B4F76FA1E4CE9F60019E90D /* AppDelegate.swift */,
+				7B4F76FE1E4CE9F60019E90D /* Main.storyboard */,
+				7B4F77011E4CE9F60019E90D /* Assets.xcassets */,
+				7B4F77031E4CE9F60019E90D /* LaunchScreen.storyboard */,
+				7B4F77061E4CE9F60019E90D /* Info.plist */,
+				7B4F77281E4CEAB00019E90D /* APIManager.swift */,
+				7BD43E151E53904300210F7F /* LoginTableViewCell.swift */,
+			);
+			path = SaltEdge;
+			sourceTree = "<group>";
+		};
+		7B4F770E1E4CE9F60019E90D /* SaltEdgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4F770F1E4CE9F60019E90D /* SaltEdgeTests.swift */,
+				7B4F77111E4CE9F60019E90D /* Info.plist */,
+			);
+			path = SaltEdgeTests;
+			sourceTree = "<group>";
+		};
+		7B4F77191E4CE9F60019E90D /* SaltEdgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4F771A1E4CE9F60019E90D /* SaltEdgeUITests.swift */,
+				7B4F771C1E4CE9F60019E90D /* Info.plist */,
+			);
+			path = SaltEdgeUITests;
+			sourceTree = "<group>";
+		};
+		7BD43E091E53419900210F7F /* AutoCompleteTextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				7BD43E0A1E5341B000210F7F /* AutoCompleteTextField.swift */,
+			);
+			name = AutoCompleteTextFiled;
+			sourceTree = "<group>";
+		};
+		7CA79FE34DA8B85689FBFEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BDD980655D20B53793AD4CA /* Pods_SaltEdge.framework */,
+				1595C84844E1DA5ED810BC5B /* Pods_SaltEdgeTests.framework */,
+				B8398576B3368607DF1D0432 /* Pods_SaltEdgeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B4F76F61E4CE9F60019E90D /* SaltEdge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4F771F1E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdge" */;
+			buildPhases = (
+				6D945FD107284E2CDE20AAD1 /* [CP] Check Pods Manifest.lock */,
+				7B4F76F31E4CE9F60019E90D /* Sources */,
+				7B4F76F41E4CE9F60019E90D /* Frameworks */,
+				7B4F76F51E4CE9F60019E90D /* Resources */,
+				CC9CDA2C0B170FFD9D82FA0D /* [CP] Embed Pods Frameworks */,
+				42E1EEDDC7A5F1EBD5815DBB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaltEdge;
+			productName = SaltEdge;
+			productReference = 7B4F76F71E4CE9F60019E90D /* SaltEdge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B4F770A1E4CE9F60019E90D /* SaltEdgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4F77221E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdgeTests" */;
+			buildPhases = (
+				0ECA6F07C072F288EF5CBFE5 /* [CP] Check Pods Manifest.lock */,
+				7B4F77071E4CE9F60019E90D /* Sources */,
+				7B4F77081E4CE9F60019E90D /* Frameworks */,
+				7B4F77091E4CE9F60019E90D /* Resources */,
+				601C3C86F8D31C1E2A2579D6 /* [CP] Embed Pods Frameworks */,
+				E5F8900CAF9AB252A4C58610 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4F770D1E4CE9F60019E90D /* PBXTargetDependency */,
+			);
+			name = SaltEdgeTests;
+			productName = SaltEdgeTests;
+			productReference = 7B4F770B1E4CE9F60019E90D /* SaltEdgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B4F77151E4CE9F60019E90D /* SaltEdgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4F77251E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdgeUITests" */;
+			buildPhases = (
+				722EF90656CE2F46BD501CD3 /* [CP] Check Pods Manifest.lock */,
+				7B4F77121E4CE9F60019E90D /* Sources */,
+				7B4F77131E4CE9F60019E90D /* Frameworks */,
+				7B4F77141E4CE9F60019E90D /* Resources */,
+				F57965098774DB21D4ECF68D /* [CP] Embed Pods Frameworks */,
+				F5CBA3856A32B8B4349A1E73 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4F77181E4CE9F60019E90D /* PBXTargetDependency */,
+			);
+			name = SaltEdgeUITests;
+			productName = SaltEdgeUITests;
+			productReference = 7B4F77161E4CE9F60019E90D /* SaltEdgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B4F76EF1E4CE9F60019E90D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ajira;
+				TargetAttributes = {
+					7B4F76F61E4CE9F60019E90D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8B2948VP7J;
+						ProvisioningStyle = Automatic;
+					};
+					7B4F770A1E4CE9F60019E90D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B4F76F61E4CE9F60019E90D;
+					};
+					7B4F77151E4CE9F60019E90D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B4F76F61E4CE9F60019E90D;
+					};
+				};
+			};
+			buildConfigurationList = 7B4F76F21E4CE9F60019E90D /* Build configuration list for PBXProject "SaltEdge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B4F76EE1E4CE9F60019E90D;
+			productRefGroup = 7B4F76F81E4CE9F60019E90D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B4F76F61E4CE9F60019E90D /* SaltEdge */,
+				7B4F770A1E4CE9F60019E90D /* SaltEdgeTests */,
+				7B4F77151E4CE9F60019E90D /* SaltEdgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B4F76F51E4CE9F60019E90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4F77051E4CE9F60019E90D /* LaunchScreen.storyboard in Resources */,
+				7B4F77021E4CE9F60019E90D /* Assets.xcassets in Resources */,
+				7B4F77001E4CE9F60019E90D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77091E4CE9F60019E90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77141E4CE9F60019E90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ECA6F07C072F288EF5CBFE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42E1EEDDC7A5F1EBD5815DBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdge/Pods-SaltEdge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601C3C86F8D31C1E2A2579D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdgeTests/Pods-SaltEdgeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D945FD107284E2CDE20AAD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		722EF90656CE2F46BD501CD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9CDA2C0B170FFD9D82FA0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdge/Pods-SaltEdge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F8900CAF9AB252A4C58610 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdgeTests/Pods-SaltEdgeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57965098774DB21D4ECF68D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdgeUITests/Pods-SaltEdgeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CBA3856A32B8B4349A1E73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaltEdgeUITests/Pods-SaltEdgeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B4F76F31E4CE9F60019E90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD43E121E5383B600210F7F /* Login.swift in Sources */,
+				7B224D871E52D799001FA5EE /* Provider.swift in Sources */,
+				7BD43E1C1E53FD7F00210F7F /* Accounts.swift in Sources */,
+				7B4F77291E4CEAB00019E90D /* APIManager.swift in Sources */,
+				7B4F76FD1E4CE9F60019E90D /* ViewController.swift in Sources */,
+				7BD43E0B1E5341B000210F7F /* AutoCompleteTextField.swift in Sources */,
+				7BD43E1A1E53FBBF00210F7F /* TransactionViewController.swift in Sources */,
+				7BD43E161E53904300210F7F /* LoginTableViewCell.swift in Sources */,
+				7BD43E141E5385C900210F7F /* LoginListTableViewController.swift in Sources */,
+				7B4F772D1E4D0E7C0019E90D /* LoginViewController.swift in Sources */,
+				7B4F76FB1E4CE9F60019E90D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77071E4CE9F60019E90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4F77101E4CE9F60019E90D /* SaltEdgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4F77121E4CE9F60019E90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4F771B1E4CE9F60019E90D /* SaltEdgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B4F770D1E4CE9F60019E90D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4F76F61E4CE9F60019E90D /* SaltEdge */;
+			targetProxy = 7B4F770C1E4CE9F60019E90D /* PBXContainerItemProxy */;
+		};
+		7B4F77181E4CE9F60019E90D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4F76F61E4CE9F60019E90D /* SaltEdge */;
+			targetProxy = 7B4F77171E4CE9F60019E90D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B4F76FE1E4CE9F60019E90D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4F76FF1E4CE9F60019E90D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B4F77031E4CE9F60019E90D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4F77041E4CE9F60019E90D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B4F771D1E4CE9F60019E90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B4F771E1E4CE9F60019E90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B4F77201E4CE9F60019E90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ACD5527BF45A3F78A8BF61 /* Pods-SaltEdge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B2948VP7J;
+				INFOPLIST_FILE = SaltEdge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B4F77211E4CE9F60019E90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E1A5972B5474BE0AD77737 /* Pods-SaltEdge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B2948VP7J;
+				INFOPLIST_FILE = SaltEdge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7B4F77231E4CE9F60019E90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A531D140D0A99340BFC649C /* Pods-SaltEdgeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SaltEdgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaltEdge.app/SaltEdge";
+			};
+			name = Debug;
+		};
+		7B4F77241E4CE9F60019E90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74110624F85B0A7D939945D3 /* Pods-SaltEdgeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SaltEdgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaltEdge.app/SaltEdge";
+			};
+			name = Release;
+		};
+		7B4F77261E4CE9F60019E90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22730277CB67632C0A245A2 /* Pods-SaltEdgeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SaltEdgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SaltEdge;
+			};
+			name = Debug;
+		};
+		7B4F77271E4CE9F60019E90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943B2455020925BDD3B1981E /* Pods-SaltEdgeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SaltEdgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ajira.SaltEdgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SaltEdge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B4F76F21E4CE9F60019E90D /* Build configuration list for PBXProject "SaltEdge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4F771D1E4CE9F60019E90D /* Debug */,
+				7B4F771E1E4CE9F60019E90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4F771F1E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4F77201E4CE9F60019E90D /* Debug */,
+				7B4F77211E4CE9F60019E90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4F77221E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4F77231E4CE9F60019E90D /* Debug */,
+				7B4F77241E4CE9F60019E90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4F77251E4CE9F60019E90D /* Build configuration list for PBXNativeTarget "SaltEdgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4F77261E4CE9F60019E90D /* Debug */,
+				7B4F77271E4CE9F60019E90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B4F76EF1E4CE9F60019E90D /* Project object */;
+}

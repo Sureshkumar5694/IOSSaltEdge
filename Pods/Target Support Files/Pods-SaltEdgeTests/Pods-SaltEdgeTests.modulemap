@@ -1,0 +1,6 @@
+framework module Pods_SaltEdgeTests {
+  umbrella header "Pods-SaltEdgeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

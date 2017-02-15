@@ -1,0 +1,6 @@
+framework module Pods_SaltEdge {
+  umbrella header "Pods-SaltEdge-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.3.0)
+  - DropDown (2)
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - RealmSwift (2.4.2):
+    - Realm (= 2.4.2)
+  - SaltEdge-iOS (2.6.0)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3)
+  - DropDown
+  - RealmSwift
+  - SaltEdge-iOS (~> 2.6.0)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
+  SaltEdge-iOS: 154e157b874774c36123946a0198155febebb424
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: f2a7af39bf5ae3485d01b961a6e1e1c7bfdb2d65
+
+COCOAPODS: 1.2.0
