@@ -10,6 +10,7 @@ target 'SaltEdge' do
   pod 'RealmSwift'
   pod 'Alamofire', '~> 4.3'
   pod 'DropDown'
+  pod 'Charts'
 
   target 'SaltEdgeTests' do
     inherit! :search_paths

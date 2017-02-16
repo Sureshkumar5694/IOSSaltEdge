@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DropDown.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>150AFF5865E805CDF823AF7E1C15955F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30B26BF3F1704EE4411EFCA3599C5D46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5168099F2EBFC99A707C03C9EADE01A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63185BEE87FD1C5DB2E9C8F7809025B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>843A4B1E4F698C1F8505386777468148</key>
+		<key>5255964C3684EE389833B62EA8957CC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B897A1381974BF1EACCDF44FA3B8FAB</key>
+		<key>AD76212BA4BCD4544A9281F3FCAEF7F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E18F361023FBAD8DE78B4D0E7ECEE655</key>
+		<key>DB7CCA1DE88CA420A8816459672905B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8361491A6C5916916081024E8D32676</key>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>

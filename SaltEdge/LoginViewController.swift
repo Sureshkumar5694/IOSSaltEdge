@@ -11,6 +11,7 @@ import SaltEdge_iOS
 import SVProgressHUD
 import RealmSwift
 import Realm
+import Alamofire
 
 class LoginViewController: UIViewController, SELoginFetchingDelegate {
 
@@ -24,9 +25,13 @@ class LoginViewController: UIViewController, SELoginFetchingDelegate {
     
     var selectedProvider: Provider?
     
+    let alert = UIAlertController(title: "Enter Details", message: "", preferredStyle: .alert)
+    
     let realm = try! Realm()
    
     @IBAction func createLogin(_ sender: UIButton) {
+        SVProgressHUD.show(withStatus: "Creating Login")
+        
         let parameters =  ["customer_id": UserDefaults.standard.string(forKey: "customerId"),
                            "country_code": selectedProvider?.country_code,
                            "provider_code": selectedProvider?.code,
@@ -85,6 +90,8 @@ class LoginViewController: UIViewController, SELoginFetchingDelegate {
 
                 for SEProvider in SEProviders!{
                     if let provider = SEProvider.base as? SEProvider{
+                        print("req", provider.requiredFields as! [NSDictionary])
+                        print("int", provider.interactiveFields)
                         let provider = Provider(value: ["name": provider.name!,
                                                         "code":provider.code!,
                                                         "mode": provider.mode!,
@@ -93,13 +100,14 @@ class LoginViewController: UIViewController, SELoginFetchingDelegate {
                                                         "home_url": provider.homeUrl!,
                                                         "login_url": provider.loginUrl!,
                                                         "forum_url": provider.forumUrl!,
-                                                        "country_code": provider.countryCode!
+                                                        "country_code": provider.countryCode!,
+                            
                             ])
                         
                         try! self.realm.write {
                             self.realm.add(provider)
                         }
-                        
+//                        print("realm Url", Realm.Configuration.defaultConfiguration.fileURL!)
                         UserDefaults.standard.set(true, forKey: "isProvidersSynced")
                         
                         self.providersList = Array(self.realm.objects(Provider.self))
@@ -117,13 +125,51 @@ class LoginViewController: UIViewController, SELoginFetchingDelegate {
     
     func login(_ login: SELogin, failedToFetchWithMessage message: String) {
         print(message)
+        SVProgressHUD.dismiss()
     }
     func loginSuccessfullyFinishedFetching(_ login: SELogin){
         print("Suceesfully logged in", login)
-        
+        SVProgressHUD.dismiss()
     }
     
     func loginRequestedInteractiveInput(_ login: SELogin) {
+        
+        var credentials = [String:String]()
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
+            "Client-id": "373byI4uTjI0JsAOxIBgAA",
+            "Service-secret": "I04_88BgVSKJwbK5k9bc-76mr0-WkOutrucXKZ8_9Z0"
+            
+        ]
+        
+        for interativeField in login.interactiveFieldsNames as! [String]{
+            self.alert.addTextField(configurationHandler: { (textField : UITextField) in
+                textField.placeholder = interativeField
+            })
+        }
+        
+        self.alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
+            for textField in self.alert.textFields!{
+                credentials[textField.placeholder!] = textField.text!
+            }
+            var parameters: Parameters = [
+                "data":[
+                    "credentials": [
+                        "sms": "123456"
+                    ]
+                ]
+            ]
+            print("parameters", parameters)
+            print("URL", "https://www.saltedge.com/api/v3/logins/\(login.id!)/interactive")
+            Alamofire.request("https://www.saltedge.com/api/v3/logins/\(login.id!)/interactive", method: .put,
+                              parameters: parameters,encoding: JSONEncoding.default, headers : headers).responseJSON { response in
+                                print("response", response.result.value as! [String : Any])
+                                
+                            }
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
         
     }
     

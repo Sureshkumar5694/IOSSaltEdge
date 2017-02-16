@@ -22,21 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Guz-5r-OhF">
-                                <rect key="frame" x="51" y="76" width="272" height="30"/>
+                                <rect key="frame" x="51" y="204" width="272" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-RF-09b">
-                                <rect key="frame" x="51" y="28" width="272" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tm-Rj-MvQ">
-                                <rect key="frame" x="58" y="165" width="258" height="30"/>
+                                <rect key="frame" x="58" y="300" width="258" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.066329695260000002" green="0.87226764899999998" blue="0.058565024809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="CREATE ACCOUNT">
@@ -46,8 +39,13 @@
                                     <action selector="createCustomer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yC2-7P-1kq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="saltedge-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-9D-LOh">
+                                <rect key="frame" x="72" y="93" width="230" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.30980392159999998" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.30980392156862746" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="userName" destination="Guz-5r-OhF" id="h7y-hq-P16"/>
@@ -55,10 +53,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sTt-qc-Qod">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="128.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Item-->
+        <!--Connect-->
         <scene sceneID="jbi-2v-91W">
             <objects>
                 <viewController id="Ldg-c3-dMO" customClass="LoginViewController" customModule="SaltEdge" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,7 +83,7 @@
                                 <rect key="frame" x="121" y="38" width="119" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egx-lo-A8k">
@@ -102,21 +104,21 @@
                                 <rect key="frame" x="87" y="167" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5p-84-9Vn">
                                 <rect key="frame" x="93" y="276" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr0-SX-VE9">
                                 <rect key="frame" x="121" y="451" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84595098349999998" green="0.28786508509999997" blue="0.25616899589999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Connect">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -124,9 +126,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.30980392159999998" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tQM-Kw-xaj"/>
+                    <tabBarItem key="tabBarItem" title="Connect" selectedImage="character-c-7" id="tQM-Kw-xaj"/>
                     <navigationItem key="navigationItem" id="efr-NR-EdD">
                         <nil key="title"/>
                     </navigationItem>
@@ -175,7 +177,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIB-ph-jFe">
-                                            <rect key="frame" x="27" y="9" width="249" height="21"/>
+                                            <rect key="frame" x="27" y="9" width="326" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -194,18 +196,7 @@
                             <outlet property="delegate" destination="rqa-fa-3LX" id="Cz3-gq-NXu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Login" id="TYq-na-ZSF">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="V1E-ai-wzn">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="REG-f1-aig">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                            </button>
-                            <connections>
-                                <action selector="back:" destination="rqa-fa-3LX" id="E2Q-JJ-K2k"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Login" id="TYq-na-ZSF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MD-S6-tg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,14 +261,14 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PR4-fS-GUu">
-                                <rect key="frame" x="71" y="91" width="221" height="30"/>
+                                <rect key="frame" x="36" y="91" width="293" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1KK-fv-LbU">
-                                <rect key="frame" x="67" y="129" width="225" height="179"/>
+                                <rect key="frame" x="36" y="129" width="293" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -286,7 +277,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.30980392159999998" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="accountListField" destination="PR4-fS-GUu" id="6h7-HV-YVJ"/>
@@ -343,20 +334,56 @@
                             <outlet property="delegate" destination="1WG-iZ-RvD" id="dva-1l-Fme"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="wB0-OG-0GT">
+                        <barButtonItem key="rightBarButtonItem" title="Graph" id="Hwx-dH-hMq">
+                            <connections>
+                                <segue destination="l19-e5-oFA" kind="show" identifier="graph" id="8pD-n8-OYW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwM-w5-9OQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4640.8000000000002" y="489.80509745127438"/>
         </scene>
-        <!--Item-->
+        <!--Category Graph View Controller-->
+        <scene sceneID="oQI-qs-W53">
+            <objects>
+                <viewController id="l19-e5-oFA" customClass="CategoryGraphViewController" customModule="SaltEdge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZB-YS-OyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="l3L-jA-NC2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZaB-rJ-Hga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcX-9M-uaG" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="zcX-9M-uaG" id="h6X-pq-smS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvU-Ey-Yh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5541.6000000000004" y="489.80509745127438"/>
+        </scene>
+        <!--Login-->
         <scene sceneID="Eof-og-FYW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nx5-gL-wYL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bmm-8I-KKi"/>
+                    <tabBarItem key="tabBarItem" title="Login" image="character-c-7" id="bmm-8I-KKi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYH-b7-drm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eYH-b7-drm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.1764705882352941" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -368,4 +395,8 @@
             <point key="canvasLocation" x="2118" y="490"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="character-c-7" width="30" height="30"/>
+        <image name="saltedge-logo" width="860" height="400"/>
+    </resources>
 </document>

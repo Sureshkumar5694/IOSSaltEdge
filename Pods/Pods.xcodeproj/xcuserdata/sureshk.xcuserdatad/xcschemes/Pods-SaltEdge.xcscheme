@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8361491A6C5916916081024E8D32676"
+               BlueprintIdentifier = "30B26BF3F1704EE4411EFCA3599C5D46"
                BuildableName = "Pods_SaltEdge.framework"
                BlueprintName = "Pods-SaltEdge"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8361491A6C5916916081024E8D32676"
+            BlueprintIdentifier = "30B26BF3F1704EE4411EFCA3599C5D46"
             BuildableName = "Pods_SaltEdge.framework"
             BlueprintName = "Pods-SaltEdge"
             ReferencedContainer = "container:Pods.xcodeproj">

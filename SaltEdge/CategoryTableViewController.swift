@@ -17,6 +17,7 @@ class CategoryTableViewController: UITableViewController {
     }
 
     override func viewDidLoad() {
+        tableView.tableFooterView = UIView()
         super.viewDidLoad()
     }
 
@@ -43,6 +44,16 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let transaction: Transaction = category[section][0]
         return transaction.category
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "graph"{
+            if let destinationViewController = segue.destination as? CategoryGraphViewController{
+                destinationViewController.categories = self.category
+            }
+        }
+        
+        
     }
     
 
@@ -85,10 +96,6 @@ class CategoryTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
     */
 
 }
